@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #050706;
+  color: #c8d6b9;
+  font-family: "Courier New", monospace;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(900px, 90%);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timestamp {
+  color: #76866d;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 0.85;
+  margin: 20px 0;
+  color: #d7e3be;
+  text-shadow: 0 0 20px rgba(190, 255, 170, 0.2);
+}
+
+.subtitle {
+  max-width: 500px;
+  color: #9aaa8e;
+}
+
+.log {
+  border-top: 1px solid #31402f;
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  color: #7f9b73;
+}
+
+.entry {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #233021;
+  background: rgba(140, 170, 120, 0.04);
+  filter: blur(0.2px);
+}
+
+.entry span {
+  color: #a6b88f;
+  font-size: 0.85rem;
+}
+
+.entry p {
+  color: #c2cab0;
+}
+
+.warning {
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+  color: #8f2f2f;
+  letter-spacing: 5px;
+  animation: flicker 4s infinite;
+}
+
+.noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image: repeating-radial-gradient(
+    circle at 20% 30%,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.2;
+  mix-blend-mode: screen;
+  z-index: 10;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.8; }
+  10% { opacity: 0.2; }
+  12% { opacity: 1; }
+  40% { opacity: 0.5; }
+  42% { opacity: 0.9; }
+}
