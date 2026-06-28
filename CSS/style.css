@@ -103,3 +103,29 @@ h2 {
   40% { opacity: 0.5; }
   42% { opacity: 0.9; }
 }
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 18px 24px;
+  display: flex;
+  gap: 20px;
+  background: rgba(5, 7, 6, 0.75);
+  border-bottom: 1px solid #1d2b1c;
+  backdrop-filter: blur(8px);
+}
+
+.site-nav a {
+  color: #7f9b73;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.site-nav a:hover {
+  color: #d7e3be;
+  text-shadow: 0 0 10px rgba(190, 255, 170, 0.4);
+}
