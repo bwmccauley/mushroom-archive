@@ -129,3 +129,60 @@ h2 {
   color: #d7e3be;
   text-shadow: 0 0 10px rgba(190, 255, 170, 0.4);
 }
+
+.timeline-list,
+.gallery-grid,
+.data-grid,
+.manifesto {
+  margin-top: 60px;
+}
+
+.timeline-item,
+.specimen-card,
+.data-card,
+.manifesto p {
+  border: 1px solid #233021;
+  background: rgba(140, 170, 120, 0.04);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.timeline-item span,
+.data-card span {
+  display: block;
+  color: #7f9b73;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.timeline-item h2,
+.specimen-card h2 {
+  margin: 0 0 12px;
+  color: #d7e3be;
+}
+
+.gallery-grid,
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.image-placeholder {
+  height: 220px;
+  border: 1px dashed #31402f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52664c;
+  background: rgba(0, 0, 0, 0.35);
+  margin-bottom: 18px;
+}
+
+.data-card strong {
+  display: block;
+  font-size: 2.5rem;
+  color: #d7e3be;
+  margin-bottom: 10px;
+}
